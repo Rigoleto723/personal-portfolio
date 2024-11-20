@@ -7,6 +7,8 @@ import {
   SiPostgresql, SiTensorflow, SiScikitlearn, SiPandas, SiNumpy,
   SiOpenai, SiJavascript, SiHtml5, SiCss3, SiGit, SiPytorch
 } from 'react-icons/si'
+import avatar from './assets/images/avatar.png';
+
 
 function App() {
   const technologies = [
@@ -33,10 +35,10 @@ function App() {
       category: "Full Stack",
       items: [
         {
-          name: "E-commerce Platform",
+          name: "Bee Optima",
           description: "Developed a full-stack e-commerce platform with user authentication, product management, and order processing.",
           tech: ["React", "Django", "PostgreSQL", "Redux"],
-          repo: "https://github.com/yourusername/ecommerce-platform"
+          repo: "https://github.com/Rigoleto723/beeOptima"
         },
         {
           name: "Task Management App",
@@ -86,33 +88,38 @@ function App() {
     <>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-teal-900 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <header className="text-center mb-12">
-            <h1 className="text-4xl font-bold text-white mb-2">Ivan Vargas Carmona</h1>
-            <p className="text-xl text-gray-300">Full Stack Developer & Machine Learning Engineer</p>
-            <div className="flex justify-center space-x-4 mt-4">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Github className="w-6 h-6" />
-              </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                <Linkedin className="w-6 h-6" />
-              </a>
-              <a href="mailto:your.email@example.com" className="text-gray-300 hover:text-white transition-colors">
-                <Mail className="w-6 h-6" />
-              </a>
+          <header className="flex flex-col md:flex-row items-center justify-center text-white py-12 px-4">
+            <div className="text-center md:text-left md:mr-8">
+              <h1 className="text-5xl font-bold text-white mb-2 flex justify-center">Ivan Vargas Carmona</h1>
+              <p className="text-xl text-gray-300 flex justify-center">Full Stack Developer & Machine Learning Engineer</p>
+              <div className="flex justify-center space-x-4 mt-4">
+                <a href="https://github.com/Rigoleto723" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                  <Github className="w-6 h-6" />
+                </a>
+                <a href="https://www.linkedin.com/in/ivanvargascarmona/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                  <Linkedin className="w-6 h-6" />
+                </a>
+                <a href="mailto:ivanvargasc723@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                  <Mail className="w-6 h-6" />
+                </a>
+              </div>
             </div>
+            <img
+              src={avatar}
+              alt="Ivan Vargas Avatar"
+              className="w-64 h-64 md:w-96 md:h-96 rounded-full" />
           </header>
 
           <section className="mb-12">
             <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg border-gray-700">
               <CardHeader>
-                <CardTitle className="text-white">Professional Profile</CardTitle>
+                <CardTitle className="text-white">About Me</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300">
-                  I am a Full Stack Developer and Machine Learning Engineer with extensive experience in web development,
-                  artificial intelligence, and data analysis. My experience ranges from creating robust web applications to implementing
-                  computer vision solutions and advanced data analysis. I am passionate about combining my full stack development skills
-                  with my experience in machine learning to create innovative and efficient solutions.
+                  I am Ivan Vargas Carmona, a Full Stack Developer and Machine Learning Engineer with extensive experience in web development, artificial intelligence, and data analysis. Before transitioning into the tech industry, I proudly served as a member of the Colombian Air Force for 15 years, where I developed discipline, leadership, and a passion for solving complex problems.<br /><br />
+
+                  I hold a degree in Electronic Engineering and have specialized in Artificial Intelligence, combining technical expertise with creativity to build innovative and efficient solutions. My journey has taken me from developing robust web applications to implementing computer vision systems and performing advanced data analysis. I am passionate about leveraging my diverse background to create impactful technology solutions.
                 </p>
               </CardContent>
             </Card>
@@ -148,7 +155,7 @@ function App() {
                       <TabsTrigger
                         key={category.category}
                         value={category.category}
-                        className="text-gray-300 w-full h-auto flex justify-center items-center whitespace-normal break-words data-[state=active]:bg-teal-600 data-[state=active]:text-white transition-all duration-300"
+                        className="bg-gray-900 text-gray-400 w-full h-auto flex justify-center items-center whitespace-normal break-words data-[state=active]:bg-teal-600 data-[state=active]:text-white transition-all duration-300"
                       >
                         {category.category}
                       </TabsTrigger>
