@@ -9,7 +9,6 @@ import {
   SiOpenai, SiJavascript, SiHtml5, SiCss3, SiGit, SiPytorch
 } from 'react-icons/si'
 
-
 function App() {
   const technologies = [
     { name: "Python", icon: SiPython },
@@ -84,7 +83,6 @@ function App() {
     }
   ]
 
-
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-teal-900 py-12 px-4 sm:px-6 lg:px-8">
@@ -108,15 +106,14 @@ function App() {
           <section className="mb-12">
             <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg border-gray-700">
               <CardHeader>
-                <CardTitle className="text-white">Perfil Profesional</CardTitle>
+                <CardTitle className="text-white">Professional Profile</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-gray-300">
-                  Soy un desarrollador Full Stack y Machine Learning Engineer con amplia experiencia en desarrollo web,
-                  inteligencia artificial y análisis de datos. Mi experiencia abarca desde la creación de aplicaciones
-                  web robustas hasta la implementación de soluciones de visión por computadora y análisis de datos avanzados.
-                  Me apasiona combinar mis habilidades en desarrollo full stack con mi experiencia en machine learning
-                  para crear soluciones innovadoras y eficientes.
+                  I am a Full Stack Developer and Machine Learning Engineer with extensive experience in web development,
+                  artificial intelligence, and data analysis. My experience ranges from creating robust web applications to implementing
+                  computer vision solutions and advanced data analysis. I am passionate about combining my full stack development skills
+                  with my experience in machine learning to create innovative and efficient solutions.
                 </p>
               </CardContent>
             </Card>
@@ -125,7 +122,7 @@ function App() {
           <section className="mb-12">
             <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg border-gray-700">
               <CardHeader>
-                <CardTitle className="text-white">Tecnologías</CardTitle>
+                <CardTitle className="text-white">Technologies</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4">
@@ -143,7 +140,7 @@ function App() {
           <section>
             <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg border-gray-700">
               <CardHeader>
-                <CardTitle className="text-white">Proyectos</CardTitle>
+                <CardTitle className="text-white">Projects</CardTitle>
               </CardHeader>
               <CardContent>
                 <Tabs defaultValue="Full Stack">
@@ -174,7 +171,7 @@ function App() {
                                 ))}
                               </div>
                               <a href={project.repo} target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:text-teal-300 transition-colors">
-                                Ver repositorio
+                                View Repository
                               </a>
                             </CardContent>
                           </Card>
