@@ -8,6 +8,7 @@ import {
   SiOpenai, SiJavascript, SiHtml5, SiCss3, SiGit, SiPytorch
 } from 'react-icons/si'
 import avatar from './assets/images/avatar.png';
+import logo from './assets/images/logo.svg';
 
 
 function App() {
@@ -88,29 +89,58 @@ function App() {
     <>
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-blue-900 to-teal-900 py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <header className="flex flex-col md:flex-row items-center justify-center text-white py-12 px-4">
-            <div className="text-center md:text-left md:mr-8">
-              <h1 className="text-5xl font-bold text-white mb-2 flex justify-center">Ivan Vargas Carmona</h1>
-              <p className="text-xl text-gray-300 flex justify-center">Full Stack Developer & Machine Learning Engineer</p>
-              <div className="flex justify-center space-x-4 mt-4">
-                <a href="https://github.com/Rigoleto723" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                  <Github className="w-6 h-6" />
-                </a>
-                <a href="https://www.linkedin.com/in/ivanvargascarmona/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
-                  <Linkedin className="w-6 h-6" />
-                </a>
-                <a href="mailto:ivanvargasc723@gmail.com" className="text-gray-300 hover:text-white transition-colors">
-                  <Mail className="w-6 h-6" />
-                </a>
-              </div>
+          <header className="fixed top-0 left-0 w-full text-white z-50 backdrop-blur-md">
+            <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
+              <img src={logo} alt="Ivan Vargas Logo" className="w-14 h-14" />
+              <nav>
+                <ul className="flex space-x-6 text-lg">
+                  <li>
+                    <a href="#about" className="hover:text-gray-300 transition-colors">
+                      About Me
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#skills" className="hover:text-gray-300 transition-colors">
+                      Skills
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#experience" className="hover:text-gray-300 transition-colors">
+                      Experience
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#projects" className="hover:text-gray-300 transition-colors">
+                      Projects
+                    </a>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <img
-              src={avatar}
-              alt="Ivan Vargas Avatar"
-              className="w-64 h-64 md:w-96 md:h-96 rounded-full" />
           </header>
 
-          <section className="mb-12">
+          <section id="about" className="mb-12">
+            <div className="flex flex-col md:flex-row items-center justify-center text-white py-12 px-4">
+              <div className="text-center md:text-left md:mr-8">
+                <h1 className="text-5xl font-bold text-white mb-2 flex justify-center">Ivan Vargas Carmona</h1>
+                <p className="text-xl text-gray-300 flex justify-center">Full Stack Developer & Machine Learning Engineer</p>
+                <div className="flex justify-center space-x-4 mt-4">
+                  <a href="https://github.com/Rigoleto723" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                    <Github className="w-6 h-6" />
+                  </a>
+                  <a href="https://www.linkedin.com/in/ivanvargascarmona/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-colors">
+                    <Linkedin className="w-6 h-6" />
+                  </a>
+                  <a href="mailto:ivanvargasc723@gmail.com" className="text-gray-300 hover:text-white transition-colors">
+                    <Mail className="w-6 h-6" />
+                  </a>
+                </div>
+              </div>
+              <img
+                src={avatar}
+                alt="Ivan Vargas Avatar"
+                className="w-64 h-64 md:w-96 md:h-96 rounded-full" />
+            </div>
             <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg border-gray-700">
               <CardHeader>
                 <CardTitle className="text-white">About Me</CardTitle>
@@ -125,7 +155,7 @@ function App() {
             </Card>
           </section>
 
-          <section className="mb-12">
+          <section id="skills" className="mb-12">
             <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg border-gray-700">
               <CardHeader>
                 <CardTitle className="text-white">Technologies</CardTitle>
@@ -143,7 +173,7 @@ function App() {
             </Card>
           </section>
 
-          <section>
+          <section id="projects">
             <Card className="bg-gray-800 bg-opacity-50 backdrop-blur-lg shadow-lg border-gray-700">
               <CardHeader>
                 <CardTitle className="text-white">Projects</CardTitle>
