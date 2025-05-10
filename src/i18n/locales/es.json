@@ -1,0 +1,58 @@
+{
+    "nav": {
+        "home": "Inicio",
+        "about": "Sobre Mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos"
+    },
+    "hero": {
+        "title": "Desarrollador Full Stack & Ingeniero de Machine Learning"
+    },
+    "about": {
+        "title": "Sobre Mí",
+        "content": "Soy Ivan Vargas Carmona, un Desarrollador Full Stack e Ingeniero de Machine Learning con amplia experiencia en desarrollo web, inteligencia artificial y análisis de datos. Antes de mi transición a la industria tecnológica, tuve el honor de servir como miembro de la Fuerza Aérea Colombiana durante 15 años, donde desarrollé disciplina, liderazgo y pasión por resolver problemas complejos.\n\nPoseo un título en Ingeniería Electrónica y me he especializado en Inteligencia Artificial, combinando experiencia técnica con creatividad para construir soluciones innovadoras y eficientes. Mi trayectoria me ha llevado desde el desarrollo de aplicaciones web robustas hasta la implementación de sistemas de visión por computadora y análisis avanzado de datos. Me apasiona aprovechar mi diversa experiencia para crear soluciones tecnológicas impactantes."
+    },
+    "skills": {
+        "title": "Habilidades"
+    },
+    "projects": {
+        "title": "Proyectos",
+        "categories": {
+            "Full Stack": "Full Stack",
+            "Machine Learning": "Machine Learning",
+            "Computer Vision": "Visión por Computadora",
+            "Data Analysis": "Análisis de Datos"
+        },
+        "links": {
+            "viewRepo": "Ver Repositorio",
+            "viewDemo": "Ver Demo"
+        },
+        "fullStack": {
+            "beeOptima": {
+                "description": "Desarrollé una plataforma de comercio electrónico full-stack con autenticación de usuarios, gestión de productos y procesamiento de pedidos."
+            },
+            "taskManagement": {
+                "description": "Construí una aplicación colaborativa de gestión de tareas con actualizaciones en tiempo real y funciones de equipo."
+            }
+        },
+        "computerVision": {
+            "objectDetection": {
+                "description": "Implementé un sistema de detección de objetos en tiempo real usando YOLO para feeds de cámaras de seguridad."
+            },
+            "facialRecognition": {
+                "description": "Desarrollé una aplicación de reconocimiento facial para sistemas de asistencia automatizada."
+            }
+        },
+        "dataAnalysis": {
+            "customerSegmentation": {
+                "description": "Creé una herramienta para segmentación de clientes usando algoritmos de machine learning."
+            },
+            "stockPredictor": {
+                "description": "Desarrollé un modelo de machine learning para predecir tendencias del mercado de valores."
+            }
+        }
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados."
+    }
+}
